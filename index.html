@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Diwali Banger | 7th Nov | Hyderabad</title>
+<meta name="description" content="Diwali Banger by Communitie. Hyderabad. 7th Nov, 5pm to 12am, Padel.hy Social Club rooftop, DSL Virtue Mall. Games, mirrors, disco and a lantern finale.">
+<meta name="theme-color" content="#4a0d12">
+<link rel="canonical" href="https://vansh8309.github.io/Diwali-Banger/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Diwali Banger | 7th Nov | Hyderabad">
+<meta property="og:description" content="The Diwali scene you need! 7th Nov, 5pm to 12am, rooftop at DSL Virtue Mall.">
+<meta property="og:url" content="https://vansh8309.github.io/Diwali-Banger/">
+<meta property="og:image" content="https://vansh8309.github.io/Diwali-Banger/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Barlow+Condensed:wght@500;700&family=Noto+Sans+Telugu:wght@800&family=Noto+Sans+Devanagari:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="chk"></div>
+<section id="hero">
+  <div class="disco"><div class="str"></div><div class="ball" role="img" aria-label="Spinning disco ball"></div></div>
+  <p class="sub">Communitie. Hyderabad × DSL Virtue Mall</p>
+  <h1>Diwali<br>Banger</h1>
+  <p class="reg">దీపావళి బాంగర్ &nbsp; दिवाली बैंगर</p>
+  <p class="tag">The Diwali scene you need!</p>
+  <p class="when">7th Nov, Saturday, 5pm to 12am<br>Padel.hy Social Club, rooftop, DSL Virtue Mall</p>
+  <div class="row" style="justify-content:center"><button class="btn" data-go="#experiences">Explore the night</button><button class="btn g" data-go="#finale">Buy tickets</button></div>
+</section>
+<div class="chk"></div>
+
+<section id="experiences">
+  <h2>What’s on the roof</h2>
+  <p class="lede">Tap a row to see what to expect.</p>
+  <details><summary>The Shooting Gallery</summary><p>Take aim and clear the targets. Warm up on the balloon range below.</p></details>
+  <details><summary>Snakes &amp; Ladders and Ludo</summary><p>Board games, on the big screen and in your hand. Play both right here.</p></details>
+  <details><summary>The Mirror Corner</summary><p>Red corner mirrors that bend the room and everyone in it. Try the online one first.</p></details>
+  <details><summary>Disco floor</summary><p>Add your DJ and music details here.</p></details>
+  <details><summary>Lanterns and fireworks</summary><p>The night ends in the sky. Release a lantern at the bottom of this page.</p></details>
+</section>
+
+<section id="games">
+  <h2>Game tables</h2>
+  <p class="lede">Two players, one phone. Pass it around.</p>
+  <div class="tabs"><button class="btn on" data-tab="slp">Snakes &amp; Ladders</button><button class="btn" data-tab="ldp">Ludo</button></div>
+  <div class="pnl on" id="slp">
+    <div class="brd" id="slb"></div>
+    <div class="ctl"><span id="slst">Red, roll the dice</span><button class="btn" id="slroll">Roll</button></div>
+  </div>
+  <div class="pnl" id="ldp">
+    <div class="brd" id="lud"><div class="gr15" id="ldg"></div></div>
+    <div class="ctl"><span id="ldst">Red, roll the dice</span><button class="btn" id="ldroll">Roll</button></div>
+    <p style="margin:12px auto 0;text-align:center;color:var(--mute);font-size:18px">Roll a 6 to bring a token out. Land on a rival to send it home. Finish needs an exact roll.</p>
+  </div>
+</section>
+
+<section id="mirror">
+  <div id="mirrorwrap">
+    <div class="mtxt">
+      <h2>The Mirror Corner</h2>
+      <p class="lede">Allow your camera and see yourself in our convex corner mirror. Nothing is recorded or sent anywhere. It all stays on your device.</p>
+      <button class="btn" id="camBtn">Turn on the mirror</button>
+    </div>
+    <div class="post"><div class="rim"><div class="glass">
+      <canvas id="mc" width="256" height="256" aria-label="Live camera view inside a round mirror"></canvas>
+      <div id="mmsg">Your reflection appears here.</div>
+    </div></div></div>
+  </div>
+</section>
+
+<section id="range-sec">
+  <h2>The Balloon Range</h2>
+  <p class="lede">Thirty seconds. Tap the balloons before they float away.</p>
+  <div id="range">
+    <div class="hud"><span>Score <span id="sc">0</span></span><span>Time <span id="tm">30</span></span></div>
+    <canvas id="cv" tabindex="0" aria-label="Balloon popping game"></canvas>
+    <div id="ov"><h3 id="ovt">Ready to shoot?</h3><div id="ovs" style="color:var(--mute)">Tap or click balloons to pop them.</div><button class="btn" id="go">Start</button></div>
+  </div>
+</section>
+
+<div class="chk"></div>
+<section id="finale">
+  <h2>Light up the sky</h2>
+  <p class="lede">Tap the sky to release a lantern. When it climbs high enough, it bursts.</p>
+  <div id="skyw"><canvas id="sky" aria-label="Night sky for releasing lanterns"></canvas><div id="hint">Tap to release a lantern</div></div>
+  <p style="margin-top:28px"><button class="btn" id="tix">Buy tickets</button> <span id="tixm" style="margin-left:10px;color:var(--mute)"></span></p>
+</section>
+<footer>7th Nov, Saturday, 5pm to 12am. Padel.hy Social Club rooftop, DSL Virtue Mall, Hyderabad.</footer>
+<div class="chk"></div>
+<script src="js/config.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/mirror.js" defer></script>
+<script src="js/balloons.js" defer></script>
+<script src="js/snakes-ladders.js" defer></script>
+<script src="js/ludo.js" defer></script>
+<script src="js/lanterns.js" defer></script>
+</body>
+</html>
