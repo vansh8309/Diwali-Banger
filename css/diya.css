@@ -1,0 +1,25 @@
+.dy{display:grid;grid-template-columns:minmax(260px,460px) 1fr;gap:34px;align-items:center}
+@media(max-width:760px){.dy{grid-template-columns:1fr}}
+.dy-stage{position:relative;border:5px solid var(--cream);aspect-ratio:1;background:radial-gradient(circle at 50% 40%,#6b1b22,#2a0a0d)}
+.dy-stage svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.dy-stage .off{display:none}
+#dyArt [data-r]{cursor:pointer;transition:fill .15s}
+#dyArt .pop{transform-box:fill-box;transform-origin:center;animation:dpop .25s}
+@keyframes dpop{50%{transform:scale(1.07)}}
+.pal{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.pal button{width:42px;height:42px;border-radius:50%;border:3px solid #3a0a0e;cursor:pointer;padding:0}
+.pal button:focus-visible,.pal button[aria-pressed=true]{outline:4px solid var(--yellow);outline-offset:2px}
+#dyMsg{margin:16px 0 0;color:var(--mute);min-height:2.8em}
+.flame{opacity:0;transition:opacity .5s}
+.lit .flame{opacity:1}
+.flame .fl{transform-box:fill-box;transform-origin:50% 100%;animation:flk .2s ease-in-out infinite alternate}
+@keyframes flk{from{transform:scale(1) rotate(-2deg)}to{transform:scale(.92,1.08) rotate(2deg)}}
+#dyGlow{opacity:0;transition:opacity 1.2s;pointer-events:none}
+.lit #dyGlow{opacity:1}
+#dyRg{transition:filter 1.2s}
+.lit #dyRg{filter:brightness(1.3) saturate(1.2)}
+#dyPlace.drop{animation:ddrop .8s cubic-bezier(.3,1.4,.5,1)}
+@keyframes ddrop{from{transform:translateY(-150px);opacity:0}to{transform:none;opacity:1}}
+.spk{animation:spk 2.2s ease-out forwards}
+@keyframes spk{from{transform:translate(0,0);opacity:1}to{transform:translate(var(--dx),-130px);opacity:0}}
+@media(prefers-reduced-motion:reduce){.flame .fl,.spk,#dyPlace.drop,#dyArt .pop{animation:none}}

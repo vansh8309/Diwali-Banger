@@ -1,0 +1,31 @@
+.gm{display:grid;grid-template-columns:minmax(260px,390px) 1fr;gap:34px;align-items:start}
+@media(max-width:800px){.gm{grid-template-columns:1fr}}
+.gm-face{border:5px solid var(--cream);background:#2a0a0d}
+.gm-meter{padding:12px 14px;border-bottom:3px solid var(--cream)}
+.gm-title{font:400 24px/1.1 'Bowlby One',sans-serif;color:var(--yellow);text-shadow:2px 2px 0 var(--red)}
+.gm-bar{height:14px;border:2px solid var(--cream);background:#2a0a0d;margin:8px 0 4px}
+.gm-bar i{display:block;height:100%;width:0;background:repeating-linear-gradient(90deg,var(--yellow) 0 10px,#e0a800 10px 12px);transition:width .3s}
+#gmScore{font-weight:700;font-size:19px;color:var(--mute)}
+#gmSvg{display:block;width:100%;height:auto}
+#gmSvg.spr{touch-action:none;cursor:crosshair}
+#gmSvg .tw{animation:tw 1.4s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.25}to{opacity:1}}
+#gmHint{margin:0;padding:8px 14px 12px;font-size:18px;color:var(--mute);max-width:none}
+.gm-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:9px 0;border-bottom:1px dashed #ecd3a455}
+.gm-l{flex:0 0 130px;font-weight:700;font-size:19px;color:var(--mute)}
+.gm-o{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.opt{cursor:pointer;padding:0}
+.opt.sw{width:30px;height:30px;border-radius:50%;border:3px solid #3a0a0e}
+.opt.sw.none{background:linear-gradient(135deg,transparent 44%,#c1121f 44% 56%,transparent 56%),var(--cream)}
+.opt.tx{font:700 17px 'Barlow Condensed',sans-serif;padding:4px 12px;background:var(--cream);border:2px solid #3a0a0e;color:#3a0a0e}
+.opt:focus-visible,.opt[aria-pressed=true]{outline:3px solid var(--yellow);outline-offset:2px}
+.opt.tx[aria-pressed=true]{background:var(--yellow)}
+.gm-steps{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:16px 0}
+.gm-steps li{font-weight:700;font-size:16px;padding:2px 10px;border:2px solid #ecd3a477;color:#ecd3a4aa}
+.gm-steps li.done{border-color:var(--yellow);color:#3a0a0e;background:var(--yellow)}
+.gm-steps li.done::before{content:'\2713 '}
+.gm-out{margin-top:34px;padding-top:24px;border-top:3px dashed #ecd3a455}
+.gm-out[hidden]{display:none}
+.gm-out img{display:block;width:min(100%,360px);border:5px solid var(--cream);margin-bottom:18px}
+#gmNote{margin:12px 0 0;color:var(--mute)}
+@media(prefers-reduced-motion:reduce){#gmSvg .tw{animation:none}}

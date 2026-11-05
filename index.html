@@ -4,46 +4,228 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Diwali Banger | 7th Nov | Hyderabad</title>
-<meta name="description" content="Diwali Banger by Communitie. Hyderabad. 7th Nov, 5pm to 12am, Padel.hy Social Club rooftop, DSL Virtue Mall. Games, mirrors, disco and a lantern finale.">
+<meta name="description" content="Diwali Banger by Communitie. Hyderabad. 7th Nov, 5pm to 12am, Padel.hy Social Club rooftop, DSL Virtue Mall. Diya painting, glam bar, disco, life-size board games, a shooting gallery and a lantern and fireworks finale.">
 <meta name="theme-color" content="#4a0d12">
-<link rel="canonical" href="https://vansh8309.github.io/Diwali-Banger/">
+<link rel="canonical" href="https://diwali-banger.runs-at.dev/">
+<link rel="preload" as="image" href="assets/banner.webp" fetchpriority="high">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Diwali Banger | 7th Nov | Hyderabad">
 <meta property="og:description" content="The Diwali scene you need! 7th Nov, 5pm to 12am, rooftop at DSL Virtue Mall.">
-<meta property="og:url" content="https://vansh8309.github.io/Diwali-Banger/">
-<meta property="og:image" content="https://vansh8309.github.io/Diwali-Banger/assets/og-image.png">
+<meta property="og:url" content="https://diwali-banger.runs-at.dev/">
+<meta property="og:image" content="https://diwali-banger.runs-at.dev/assets/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Barlow+Condensed:wght@500;700&family=Noto+Sans+Telugu:wght@800&family=Noto+Sans+Devanagari:wght@800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/banner.css">
+<link rel="stylesheet" href="css/diya.css">
+<link rel="stylesheet" href="css/glam.css">
 </head>
 <body>
-<div class="chk"></div>
-<section id="hero">
-  <div class="disco"><div class="str"></div><div class="ball" role="img" aria-label="Spinning disco ball"></div></div>
-  <p class="sub">Communitie. Hyderabad × DSL Virtue Mall</p>
-  <h1>Diwali<br>Banger</h1>
-  <p class="reg">దీపావళి బాంగర్ &nbsp; दिवाली बैंगर</p>
-  <p class="tag">The Diwali scene you need!</p>
-  <p class="when">7th Nov, Saturday, 5pm to 12am<br>Padel.hy Social Club, rooftop, DSL Virtue Mall</p>
-  <div class="row" style="justify-content:center"><button class="btn" data-go="#experiences">Explore the night</button><button class="btn g" data-go="#finale">Buy tickets</button></div>
-</section>
+<header id="banner">
+  <h1 class="sr">Diwali Banger, the Diwali scene you need. By Communitie with Padel.HY. Saturday 7th Nov, 5pm to 12am. Padel.hy Social Club rooftop, DSL Virtue Mall, Hyderabad.</h1>
+  <div class="bn-view">
+    <div class="bn-art" aria-hidden="true">
+      <div class="bn-kb">
+        <img src="assets/banner.webp" alt="" width="1600" height="900" fetchpriority="high">
+        <canvas id="bnfx"></canvas>
+        <div class="bn-shine"></div>
+      </div>
+    </div>
+    <button class="bn-pp" id="bnPP" aria-pressed="false">Pause animation</button>
+  </div>
+  <div class="bn-cta"><a class="btn" href="https://communitie.in/events/diwali-banger" target="_blank" rel="noopener">Buy tickets</a><button class="btn g" data-go="#glance">Explore the night</button></div>
+</header>
 <div class="chk"></div>
 
-<section id="experiences">
-  <h2>What’s on the roof</h2>
-  <p class="lede">Tap a row to see what to expect.</p>
-  <details><summary>The Shooting Gallery</summary><p>Take aim and clear the targets. Warm up on the balloon range below.</p></details>
-  <details><summary>Snakes &amp; Ladders and Ludo</summary><p>Board games, on the big screen and in your hand. Play both right here.</p></details>
-  <details><summary>The Mirror Corner</summary><p>Red corner mirrors that bend the room and everyone in it. Try the online one first.</p></details>
-  <details><summary>Disco floor</summary><p>Add your DJ and music details here.</p></details>
-  <details><summary>Lanterns and fireworks</summary><p>The night ends in the sky. Release a lantern at the bottom of this page.</p></details>
+<section id="details">
+  <h2>The details</h2>
+  <div class="facts">
+    <div><span class="k">When</span><b>Saturday, 7th Nov</b><span>5pm to 12am</span></div>
+    <div><span class="k">Where</span><b>Padel.hy Social Club, rooftop</b><span>DSL Virtue Mall, Hyderabad</span></div>
+    <div><span class="k">Hosted by</span><b>Communitie</b><span>with Padel.HY</span></div>
+    <div><span class="k">Entry</span><b>21+</b><span>Limited tickets</span></div>
+  </div>
+  <div class="row" style="margin-top:26px"><a class="btn g" href="https://www.google.com/maps/search/?api=1&amp;query=Padel.hy+Social+Club+DSL+Virtue+Mall+Hyderabad" target="_blank" rel="noopener">Get directions</a></div>
 </section>
 
-<section id="games">
-  <h2>Game tables</h2>
-  <p class="lede">Two players, one phone. Pass it around.</p>
+<section id="glance">
+  <h2>The night, hour by hour</h2>
+  <p class="lede">Tap an experience to jump to it. Times are tentative and several things run side by side.</p>
+  <ol class="gl">
+    <li><a href="#diya"><span class="t">From 5:00 PM</span><span class="n">Diya Painting</span><span class="f">Free</span></a></li>
+    <li><a href="#mirror"><span class="t">All night</span><span class="n">The Mirror Corner</span><span class="f">Free</span></a></li>
+    <li><a href="#glam"><span class="t">All night</span><span class="n">Glam &amp; Glitter Bar</span><span class="f">Free</span></a></li>
+    <li><a href="#disco"><span class="t">From 5:00 PM</span><span class="n">Disco Floor</span><span class="f">Free</span></a></li>
+    <li><a href="#boards"><span class="t">From 6:00 PM</span><span class="n">Life-size Snakes &amp; Ladders and Ludo</span><span class="f">Free</span></a></li>
+    <li><a href="#gallery"><span class="t">From 6:00 PM</span><span class="n">The Shooting Gallery</span></a></li>
+    <li><a href="#finale"><span class="t">10:00 PM</span><span class="n">Lanterns &amp; Fireworks</span></a></li>
+  </ol>
+</section>
+
+<section id="diya" class="x">
+  <p class="slot"><span>From 5:00 PM</span><span class="free">Free</span></p>
+  <h2>Diya Painting</h2>
+  <p class="lede">A free hands-on workshop to kick off the night. Paint a clay diya, set it in a flower rangoli and light it. Try the pocket version right here.</p>
+  <div class="dy game">
+    <div class="dy-stage">
+      <svg id="dyArt" viewBox="0 0 300 240" role="img" aria-label="A diya to colour. Tap a part to paint it.">
+        <g id="dyG" stroke="#3a0a0e" stroke-width="3" stroke-linejoin="round">
+          <path data-r="body" data-f="#d9a56e" fill="#d9a56e" d="M30 105 C40 175 100 205 150 205 C200 205 260 175 270 105 Z"/>
+          <path data-r="band" data-f="#d9a56e" fill="#d9a56e" d="M44 128 C80 168 220 168 256 128 L252 146 C220 186 80 186 48 146 Z"/>
+          <circle data-r="d1" data-f="#d9a56e" fill="#d9a56e" cx="88" cy="160" r="6"/>
+          <circle data-r="d2" data-f="#d9a56e" fill="#d9a56e" cx="119" cy="165" r="6"/>
+          <circle data-r="d3" data-f="#d9a56e" fill="#d9a56e" cx="150" cy="167" r="6"/>
+          <circle data-r="d4" data-f="#d9a56e" fill="#d9a56e" cx="181" cy="165" r="6"/>
+          <circle data-r="d5" data-f="#d9a56e" fill="#d9a56e" cx="212" cy="160" r="6"/>
+          <path data-r="base" data-f="#d9a56e" fill="#d9a56e" d="M105 203 L195 203 L186 224 L114 224 Z"/>
+          <ellipse data-r="lip" data-f="#d9a56e" fill="#d9a56e" cx="150" cy="105" rx="122" ry="28"/>
+          <ellipse data-r="oil" data-f="#6b3a1f" fill="#6b3a1f" cx="150" cy="105" rx="100" ry="19"/>
+          <rect x="146" y="84" width="8" height="22" rx="3" fill="#2a1a12" stroke="none"/>
+          <g class="flame" stroke="none" pointer-events="none">
+            <circle cx="150" cy="66" r="52" fill="#ffb02e" opacity=".28"/>
+            <path class="fl" d="M150 36 C165 60 171 76 150 90 C129 76 135 60 150 36Z" fill="#ff9f1c"/>
+            <path class="fl" d="M150 56 C157 68 159 76 150 85 C141 76 143 68 150 56Z" fill="#ffe08a"/>
+          </g>
+        </g>
+      </svg>
+      <svg id="dyRang" class="off" viewBox="0 0 400 400" role="img" aria-label="Your diya in a flower rangoli"></svg>
+    </div>
+    <div class="dy-ctl">
+      <div class="pal" id="dyPal" role="group" aria-label="Colours"></div>
+      <div class="row"><button class="btn" id="dyNext">Place in the rangoli</button><button class="btn g" id="dyReset">Start over</button></div>
+      <p id="dyMsg" role="status">Pick a colour, then tap parts of the diya.</p>
+    </div>
+  </div>
+</section>
+
+<section id="mirror" class="x">
+  <p class="slot"><span>Open all night</span><span class="free">Free</span></p>
+  <div id="mirrorwrap">
+    <div class="mtxt">
+      <h2>The Mirror Corner</h2>
+      <p class="lede">Round red parking mirrors that bend the room and everyone in it: the selfie corner of the night. Try the online one. Allow your camera and see yourself in our convex corner mirror. Nothing is recorded or sent anywhere. It all stays on your device.</p>
+      <button class="btn" id="camBtn">Turn on the mirror</button>
+    </div>
+    <div class="post"><div class="rim"><div class="glass">
+      <canvas id="mc" width="256" height="256" aria-label="Live camera view inside a round mirror"></canvas>
+      <div id="mmsg">Your reflection appears here.</div>
+    </div></div></div>
+  </div>
+</section>
+
+<section id="glam" class="x">
+  <p class="slot"><span>Open all night</span><span class="free">Free</span></p>
+  <h2>Glam &amp; Glitter Bar</h2>
+  <p class="lede">Illuminated mirrors, kundan, glitter and festive makeup. At the event it is a dress-up bar. Here, glam up a face, earn a Glam score and send your look to friends along with the invite.</p>
+  <div class="gm game">
+    <div class="gm-face">
+      <div class="gm-meter"><div class="gm-title" id="gmTitle">Bare-faced</div><div class="gm-bar"><i id="gmBar"></i></div><div id="gmScore">Glam score 0 / 100</div></div>
+      <svg id="gmSvg" viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated face to apply festive makeup and jewellery on">
+        <defs>
+          <radialGradient id="gmBl"><stop id="gmBl0" offset="0" stop-color="#ff6f91" stop-opacity=".6"/><stop id="gmBl1" offset="1" stop-color="#ff6f91" stop-opacity="0"/></radialGradient>
+          <radialGradient id="gmBg" cx=".5" cy=".4" r=".75"><stop offset="0" stop-color="#7a1c26"/><stop offset="1" stop-color="#2a0a0d"/></radialGradient>
+          <radialGradient id="gmHi"><stop offset="0" stop-color="#fff" stop-opacity=".26"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+          <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9a0"/><stop offset=".5" stop-color="#d4a017"/><stop offset="1" stop-color="#8a5a00"/></linearGradient>
+          <clipPath id="gmEL"><path d="M100 158 Q120 141 142 162 Q122 174 100 158Z"/></clipPath>
+          <clipPath id="gmER"><path d="M200 158 Q180 141 158 162 Q178 174 200 158Z"/></clipPath>
+        </defs>
+        <rect width="300" height="380" fill="url(#gmBg)"/>
+        <path d="M150 18 C66 18 34 92 40 176 C44 244 62 300 44 380 L256 380 C238 300 256 244 260 176 C266 92 234 18 150 18Z" fill="#1d0b0d"/>
+        <path d="M66 96 C52 160 58 236 52 330 M234 96 C248 160 242 236 248 330" fill="none" stroke="#3b1a1d" stroke-width="2.4" opacity=".7" stroke-linecap="round"/>
+        <path class="sk" d="M124 262 L124 318 Q150 348 176 318 L176 262Z" fill="#e0a97d"/>
+        <ellipse cx="150" cy="297" rx="40" ry="13" fill="#000" opacity=".17"/>
+        <path d="M14 380 C26 326 92 318 124 314 Q150 346 176 314 C208 318 274 326 286 380Z" fill="#7a1018"/>
+        <path d="M124 314 Q150 346 176 314" fill="none" stroke="url(#gold)" stroke-width="4" stroke-linejoin="round"/>
+        <ellipse class="sk" cx="86" cy="176" rx="8" ry="15" fill="#e0a97d"/><ellipse class="sk" cx="214" cy="176" rx="8" ry="15" fill="#e0a97d"/>
+        <g id="gmJh" display="none">
+          <g transform="translate(86 190)"><circle r="4" fill="url(#gold)"/><path d="M0 4 V13" stroke="#d4a017" stroke-width="1.4"/><path d="M-13 27 C-13 12 13 12 13 27Z" fill="url(#gold)" stroke="#7a5200" stroke-width="1"/><path d="M-13 27 L-17 45 Q0 51 17 45 L13 27Z" fill="url(#gold)" stroke="#7a5200" stroke-width="1"/><circle class="st" cy="30" r="4"/><circle cx="-10" cy="48" r="2.4" fill="#f4efe6"/><circle cy="51" r="2.4" fill="#f4efe6"/><circle cx="10" cy="48" r="2.4" fill="#f4efe6"/></g>
+          <g transform="translate(214 190)"><circle r="4" fill="url(#gold)"/><path d="M0 4 V13" stroke="#d4a017" stroke-width="1.4"/><path d="M-13 27 C-13 12 13 12 13 27Z" fill="url(#gold)" stroke="#7a5200" stroke-width="1"/><path d="M-13 27 L-17 45 Q0 51 17 45 L13 27Z" fill="url(#gold)" stroke="#7a5200" stroke-width="1"/><circle class="st" cy="30" r="4"/><circle cx="-10" cy="48" r="2.4" fill="#f4efe6"/><circle cy="51" r="2.4" fill="#f4efe6"/><circle cx="10" cy="48" r="2.4" fill="#f4efe6"/></g>
+        </g>
+        <path id="gmFace" class="sk" d="M88 148 C88 92 116 62 150 62 C184 62 212 92 212 148 C212 196 196 244 174 270 C164 282 156 289 150 289 C144 289 136 282 126 270 C104 244 88 196 88 148Z" fill="#e0a97d"/>
+        <path d="M92 188 C100 238 126 276 150 286 C174 276 200 238 208 188 C200 230 176 264 150 271 C124 264 100 230 92 188Z" fill="#000" opacity=".08"/>
+        <ellipse cx="150" cy="104" rx="34" ry="15" fill="url(#gmHi)"/>
+        <ellipse cx="112" cy="200" rx="24" ry="15" fill="url(#gmHi)"/><ellipse cx="188" cy="200" rx="24" ry="15" fill="url(#gmHi)"/>
+        <path d="M150 152 L150 197" stroke="#fff" stroke-opacity=".16" stroke-width="6" stroke-linecap="round"/>
+        <g id="gmBu" display="none"><circle cx="115" cy="208" r="24" fill="url(#gmBl)"/><circle cx="185" cy="208" r="24" fill="url(#gmBl)"/></g>
+        <path d="M100 158 Q120 141 142 162 Q122 174 100 158Z" fill="#fff"/><path d="M200 158 Q180 141 158 162 Q178 174 200 158Z" fill="#fff"/>
+        <g clip-path="url(#gmEL)"><circle cx="124" cy="159.5" r="7.2" fill="#4a2615"/><circle cx="124" cy="159.5" r="4.4" fill="#26110a"/><circle cx="124" cy="159.5" r="2.4" fill="#000"/><circle cx="126.6" cy="156.6" r="1.7" fill="#fff"/><circle cx="121.6" cy="162.6" r=".8" fill="#fff" opacity=".7"/><path d="M96 150 Q121 140 148 152 L148 158 Q121 150 96 158Z" fill="#000" opacity=".12"/></g>
+        <g clip-path="url(#gmER)"><circle cx="176" cy="159.5" r="7.2" fill="#4a2615"/><circle cx="176" cy="159.5" r="4.4" fill="#26110a"/><circle cx="176" cy="159.5" r="2.4" fill="#000"/><circle cx="178.6" cy="156.6" r="1.7" fill="#fff"/><circle cx="173.6" cy="162.6" r=".8" fill="#fff" opacity=".7"/><path d="M204 150 Q179 140 152 152 L152 158 Q179 150 204 158Z" fill="#000" opacity=".12"/></g>
+        <g id="gmSh" opacity="0"><path d="M99 159 Q120 120 144 163 Q121 142 99 159Z" fill="#c1121f"/><path d="M201 159 Q180 120 156 163 Q179 142 201 159Z" fill="#c1121f"/></g>
+        <path d="M102 152 Q121 135 144 156 M198 152 Q179 135 156 156" fill="none" stroke="#5a2412" stroke-opacity=".32" stroke-width="1.3" stroke-linecap="round"/>
+        <path d="M100 158 Q120 141 142 162 M200 158 Q180 141 158 162" fill="none" stroke="#140708" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M100 158 L93 152 M102 156.5 L96 149 M104 155 L100 147.5 M200 158 L207 152 M198 156.5 L204 149 M196 155 L200 147.5" fill="none" stroke="#140708" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M104 162 Q122 173 138 164 M196 162 Q178 173 162 164" fill="none" stroke="#140708" stroke-opacity=".35" stroke-width="1" stroke-linecap="round"/>
+        <g id="gmLk" display="none" fill="none" stroke="#120808" stroke-linecap="round"><path d="M100 158 Q120 141 142 162 M200 158 Q180 141 158 162" stroke-width="3.6"/><path d="M103 162 Q122 174 139 164 M197 162 Q178 174 161 164" stroke-width="2.4"/></g>
+        <g id="gmLw" display="none"><path d="M100 158 Q120 141 142 162 M200 158 Q180 141 158 162" fill="none" stroke="#120808" stroke-width="3.4" stroke-linecap="round"/><path d="M100 158 L86 146 L108 151Z M200 158 L214 146 L192 151Z" fill="#120808"/><path d="M103 162 Q122 172 139 164 M197 162 Q178 172 161 164" fill="none" stroke="#120808" stroke-width="1.6" stroke-linecap="round"/></g>
+        <path d="M97 146 Q116 126 146 137 L145 141 Q118 134 100 150Z M203 146 Q184 126 154 137 L155 141 Q182 134 200 150Z" fill="#1d0b0d"/>
+        <path d="M143 168 Q141 190 139 201 M157 168 Q159 190 161 201" fill="none" stroke="#000" stroke-opacity=".08" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="150" cy="199" r="4" fill="#fff" opacity=".13"/>
+        <path d="M141 203 Q140 209 146 209 Q150 211 154 209 Q160 209 159 203" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="1.6" stroke-linecap="round"/>
+        <ellipse cx="145" cy="206" rx="2" ry="1.3" fill="#000" opacity=".32"/><ellipse cx="155" cy="206" rx="2" ry="1.3" fill="#000" opacity=".32"/>
+        <g id="gmNa" display="none"><circle cx="136" cy="215" r="10.5" fill="none" stroke="url(#gold)" stroke-width="2"/><circle cx="127.4" cy="210" r="2.2" fill="#f4efe6"/><circle cx="126" cy="216" r="2.2" fill="#f4efe6"/><circle cx="129" cy="222" r="2.2" fill="#f4efe6"/><circle class="st" cx="141" cy="203.5" r="2.6"/></g>
+        <path id="gmLp" d="M125 243 Q136 233 144 234 Q150 238 156 234 Q164 233 175 243 Q150 249 125 243Z M125 243 Q150 249 175 243 Q165 266 150 268 Q135 266 125 243Z" fill="#c9786f"/>
+        <path d="M125 243 Q150 249 175 243" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="1.2"/>
+        <path d="M138 256 Q150 262 162 256" fill="none" stroke="#fff" stroke-opacity=".38" stroke-width="2.2" stroke-linecap="round"/>
+        <g id="gmGe" display="none" stroke="#d4a017" stroke-width="1"><circle class="st" cx="98" cy="176" r="3.4"/><circle cx="95" cy="186" r="2.4" fill="#f4efe6"/><circle class="st" cx="96" cy="197" r="3.4"/><circle class="st" cx="202" cy="176" r="3.4"/><circle cx="205" cy="186" r="2.4" fill="#f4efe6"/><circle class="st" cx="204" cy="197" r="3.4"/></g>
+        <g id="gmB1" display="none"><circle cx="150" cy="127" r="4.6" fill="#c1121f"/></g>
+        <g id="gmB2" display="none"><path d="M150 116 C158 124 156 133 150 137 C144 133 142 124 150 116Z" fill="#c1121f"/></g>
+        <g id="gmB3" display="none"><circle cx="150" cy="127" r="10" fill="none" stroke="url(#gold)" stroke-width="1.6"/><circle cx="150" cy="127" r="4.2" fill="#c1121f"/><circle cx="150" cy="114.5" r="1.3" fill="#d4a017"/><circle cx="150" cy="139.5" r="1.3" fill="#d4a017"/><circle cx="137.5" cy="127" r="1.3" fill="#d4a017"/><circle cx="162.5" cy="127" r="1.3" fill="#d4a017"/></g>
+        <path d="M84 182 C66 94 102 44 150 44 C198 44 234 94 216 182 C212 134 192 102 158 86 Q150 80 142 86 C108 102 88 134 84 182Z" fill="#140708"/>
+        <path d="M100 76 C86 106 84 146 84 178 M200 76 C214 106 216 146 216 178" fill="none" stroke="#3b1a1d" stroke-width="2" opacity=".7" stroke-linecap="round"/>
+        <g id="gmTk" display="none"><path d="M150 80 L150 90" stroke="#d4a017" stroke-width="1.6"/><path d="M150 82 Q128 84 108 106 M150 82 Q172 84 192 106" fill="none" stroke="#d4a017" stroke-width="1.6" stroke-dasharray="1 3.2" stroke-linecap="round"/><circle cx="150" cy="90" r="3" fill="url(#gold)"/><path d="M150 93 C159 101 157 110 150 114 C143 110 141 101 150 93Z" fill="url(#gold)" stroke="#7a5200" stroke-width="1"/><circle class="st" cx="150" cy="101.5" r="3.2"/></g>
+        <g id="gmZn" display="none" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="1" stroke-dasharray="3 3"><ellipse cx="117" cy="207" rx="19" ry="17"/><ellipse cx="183" cy="207" rx="19" ry="17"/><ellipse cx="121" cy="158" rx="24" ry="18"/><ellipse cx="179" cy="158" rx="24" ry="18"/><ellipse cx="150" cy="188" rx="5" ry="13"/></g>
+        <g id="gmGl"></g>
+      </svg>
+      <p id="gmHint">Pick a glitter colour, then drag across the face to sprinkle.</p>
+    </div>
+    <div class="gm-ctl">
+      <div id="gmRows"></div>
+      <ul class="gm-steps" id="gmSteps" aria-label="Glam steps"></ul>
+      <div class="row"><button class="btn" id="gmSurp">Surprise me</button><button class="btn g" id="gmReset">Reset</button></div>
+      <div class="gm-name"><label for="gmName">Your name (goes on the image)</label><input id="gmName" type="text" maxlength="20" autocomplete="given-name" placeholder="e.g. Ananya"><p id="gmNameMsg" role="status"></p></div>
+      <div class="row" style="margin-top:10px"><button class="btn" id="gmMake">Make my image</button></div>
+    </div>
+  </div>
+  <div class="gm-out" id="gmOut" hidden>
+    <img id="gmImg" alt="Your Glam and Glitter look with the Diwali Banger event details">
+    <div class="row"><button class="btn" id="gmShare">Share with friends</button><a class="btn g" id="gmDl" href="#" download="my-diwali-banger-look.png">Download image</a><button class="btn g" id="gmCopy">Copy invite text</button></div>
+    <p id="gmNote" role="status"></p>
+  </div>
+</section>
+
+<section id="disco" class="x">
+  <p class="slot"><span>Sundowner from 5:00 PM</span><span>Dance floor from 9:00 PM</span><span class="free">Free</span></p>
+  <h2>Disco Floor</h2>
+  <div class="dsc game">
+    <div class="disco"><div class="str"></div><div class="ball" role="img" aria-label="Spinning disco ball"></div></div>
+    <div class="dsc-t">
+      <p class="lede">A DJ-led sundowner sets the tone as the sun goes down, then from 9 the rooftop turns into a proper dance floor. Expect Bollywood favourites, nostalgic hits, house and upbeat disco.</p>
+      <ul class="chips"><li>Bollywood favourites</li><li>Nostalgic hits</li><li>House</li><li>Disco</li></ul>
+    </div>
+  </div>
+  <div class="dj" id="dj">
+    <h3>Pocket DJ</h3>
+    <p class="lede">Warm up the floor from your phone. Pick a vibe, tap the grid to remix the beat, then hit Drop.</p>
+    <div class="row dj-top">
+      <div class="row" role="group" aria-label="Vibe"><button class="btn g" data-dj="house" aria-pressed="false">House</button><button class="btn g" data-dj="disco" aria-pressed="false">Disco</button><button class="btn g" data-dj="bolly" aria-pressed="false">Bollywood</button></div>
+      <button class="btn" id="djPlay" aria-pressed="false">Play</button>
+      <button class="btn g" id="djDrop" disabled>Drop</button>
+    </div>
+    <label class="dj-bpm">Tempo <input type="range" id="djBpm" min="80" max="140" value="124" aria-label="Tempo in beats per minute"> <b><span id="djBpmV">124</span> BPM</b></label>
+    <div class="dj-wrap"><div class="dj-grid" id="djGrid"></div></div>
+    <div class="eq" id="djEq" aria-hidden="true"><i style="--h:92%;--d:0.83s"></i><i style="--h:94%;--d:0.60s"></i><i style="--h:59%;--d:0.45s"></i><i style="--h:100%;--d:0.61s"></i><i style="--h:58%;--d:0.40s"></i><i style="--h:73%;--d:0.43s"></i><i style="--h:40%;--d:0.68s"></i><i style="--h:85%;--d:0.88s"></i><i style="--h:55%;--d:0.69s"></i><i style="--h:43%;--d:0.38s"></i><i style="--h:59%;--d:0.83s"></i><i style="--h:38%;--d:0.78s"></i><i style="--h:76%;--d:0.59s"></i><i style="--h:60%;--d:0.64s"></i><i style="--h:72%;--d:0.62s"></i><i style="--h:45%;--d:0.60s"></i><i style="--h:70%;--d:0.57s"></i><i style="--h:45%;--d:0.74s"></i><i style="--h:75%;--d:0.77s"></i><i style="--h:100%;--d:0.51s"></i><i style="--h:43%;--d:0.66s"></i><i style="--h:48%;--d:0.57s"></i><i style="--h:72%;--d:0.56s"></i><i style="--h:37%;--d:0.82s"></i><i style="--h:35%;--d:0.47s"></i><i style="--h:41%;--d:0.61s"></i></div>
+    <p class="dj-note">Sound plays from your device. If you hear nothing on an iPhone, switch off silent mode.</p>
+  </div>
+</section>
+
+<section id="boards" class="x">
+  <p class="slot"><span>From 6:00 PM</span><span>Life-size</span><span class="free">Free</span></p>
+  <h2>Snakes &amp; Ladders and Ludo</h2>
+  <p class="lede">At the event both are life-size: roll, step and race across a board you can stand on. You can experience them right now too. Two players, one phone. Pass it around.</p>
+  <div class="game">
   <div class="tabs"><button class="btn on" data-tab="slp">Snakes &amp; Ladders</button><button class="btn" data-tab="ldp">Ludo</button></div>
   <div class="pnl on" id="slp">
     <div class="brd" id="slb"></div>
@@ -54,43 +236,49 @@
     <div class="ctl"><span id="ldst">Red, roll the dice</span><button class="btn" id="ldroll">Roll</button></div>
     <p style="margin:12px auto 0;text-align:center;color:var(--mute);font-size:18px">Roll a 6 to bring a token out. Land on a rival to send it home. Finish needs an exact roll.</p>
   </div>
-</section>
-
-<section id="mirror">
-  <div id="mirrorwrap">
-    <div class="mtxt">
-      <h2>The Mirror Corner</h2>
-      <p class="lede">Allow your camera and see yourself in our convex corner mirror. Nothing is recorded or sent anywhere. It all stays on your device.</p>
-      <button class="btn" id="camBtn">Turn on the mirror</button>
-    </div>
-    <div class="post"><div class="rim"><div class="glass">
-      <canvas id="mc" width="256" height="256" aria-label="Live camera view inside a round mirror"></canvas>
-      <div id="mmsg">Your reflection appears here.</div>
-    </div></div></div>
   </div>
 </section>
 
-<section id="range-sec">
-  <h2>The Balloon Range</h2>
-  <p class="lede">Thirty seconds. Tap the balloons before they float away.</p>
+<section id="gallery" class="x">
+  <p class="slot"><span>From 6:00 PM</span></p>
+  <h2>The Shooting Gallery</h2>
+  <p class="lede">Gun shooter, ball in the basket, knock the pyramid down with padel gear. The Mela Games Zone is made for friendly rivalry. Warm up with thirty seconds of balloon popping: tap the balloons before they float away.</p>
+  <div class="game">
   <div id="range">
     <div class="hud"><span>Score <span id="sc">0</span></span><span>Time <span id="tm">30</span></span></div>
     <canvas id="cv" tabindex="0" aria-label="Balloon popping game"></canvas>
     <div id="ov"><h3 id="ovt">Ready to shoot?</h3><div id="ovs" style="color:var(--mute)">Tap or click balloons to pop them.</div><button class="btn" id="go">Start</button></div>
   </div>
+  </div>
 </section>
 
 <div class="chk"></div>
 <section id="finale">
-  <h2>Light up the sky</h2>
-  <p class="lede">Tap the sky to release a lantern. When it climbs high enough, it bursts.</p>
+  <p class="slot"><span>10:00 PM</span></p>
+  <h2>Lanterns and fireworks</h2>
+  <p class="lede">At 10, the night looks up: a fireworks show, then a lantern release. Try it here. Tap the sky to release a lantern, and when it climbs high enough, it bursts.</p>
+  <div class="game">
   <div id="skyw"><canvas id="sky" aria-label="Night sky for releasing lanterns"></canvas><div id="hint">Tap to release a lantern</div></div>
-  <p style="margin-top:28px"><button class="btn" id="tix">Buy tickets</button> <span id="tixm" style="margin-left:10px;color:var(--mute)"></span></p>
+  </div>
+  <a class="btn xl" href="https://communitie.in/events/diwali-banger" target="_blank" rel="noopener">Buy tickets</a>
+</section>
+
+<section id="partners">
+  <h2>With thanks to our partners</h2>
+  <p class="lede">Diwali Banger comes together because of the people who back it. Thank you.</p>
+  <ul class="partners">
+    <li class="pt"><img src="assets/logo-padelhy.png" alt="Padel.HY logo" width="297" height="297" loading="lazy"><div><b>Padel.HY</b><span>Our host venue. The rooftop, the sound, the bar and the fireworks.</span></div></li>
+    <!-- To add a partner: copy the <li> above, drop the logo into assets/, then change the logo path, name and one-line role. -->
+  </ul>
 </section>
 <footer>7th Nov, Saturday, 5pm to 12am. Padel.hy Social Club rooftop, DSL Virtue Mall, Hyderabad.</footer>
 <div class="chk"></div>
-<script src="js/config.js" defer></script>
+<button class="totop" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 19V6M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="square"/></svg></button>
 <script src="js/main.js" defer></script>
+<script src="js/banner.js" defer></script>
+<script src="js/diya.js" defer></script>
+<script src="js/glam.js" defer></script>
+<script src="js/dj.js" defer></script>
 <script src="js/mirror.js" defer></script>
 <script src="js/balloons.js" defer></script>
 <script src="js/snakes-ladders.js" defer></script>
