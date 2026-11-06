@@ -63,7 +63,7 @@ details p{margin:10px 0 0;color:var(--mute);font-size:21px}
 #hint{position:absolute;left:0;right:0;bottom:16px;text-align:center;font-size:22px;font-weight:700;pointer-events:none}
 footer{text-align:center;padding:30px 22px 50px;color:var(--mute)}
 
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border-top:3px solid var(--cream);border-bottom:3px solid var(--cream)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:0;border-top:3px solid var(--cream);border-bottom:3px solid var(--cream)}
 .facts>div{padding:18px 16px 18px 0;display:flex;flex-direction:column;gap:2px;font-size:21px}
 .facts b{font:400 clamp(20px,3.6vw,26px)/1.15 'Bowlby One',sans-serif;color:var(--yellow)}
 .facts .k{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:16px;color:var(--mute)}
@@ -139,3 +139,15 @@ section.x{border-top:3px dashed #ecd3a455}
 #mrMsg{margin:6px 0 10px;min-height:1.3em;color:var(--yellow);font-size:18px}
 #mrNote{margin:12px 0 0;color:var(--mute)}
 #mmsg.count{font:400 clamp(90px,28vw,150px)/1 'Bowlby One',Impact,sans-serif;color:#fff;text-shadow:0 6px 0 var(--red);padding:0}
+.inc{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:16px}
+.inc li{border:3px solid var(--cream);padding:16px 18px;background:#ffffff0a}
+.inc b{display:block;font:400 clamp(19px,3.2vw,24px)/1.15 'Bowlby One',sans-serif;color:var(--yellow);margin-bottom:8px}
+.inc span{font-size:19px;color:var(--mute)}
+.inc-also{margin-top:30px}
+.inc-also h3,.xg h3{font:700 18px 'Barlow Condensed',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 10px}
+.chips.lk li{border:0;padding:0}
+.chips.lk a{display:block;border:2px solid var(--cream);padding:4px 14px;font-weight:700;font-size:20px;color:var(--cream);text-decoration:none}
+.chips.lk a:hover,.chips.lk a:focus-visible{background:var(--yellow);border-color:var(--yellow);color:#3a0a0e;outline:none}
+.xg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:26px 30px;margin-top:26px}
+.xg .chips{margin:0}
+.tease{font:400 clamp(24px,5vw,42px)/1.2 'Bowlby One',Impact,sans-serif;color:var(--yellow);text-shadow:3px 3px 0 var(--red);text-align:center;margin:46px auto 0;max-width:24ch}

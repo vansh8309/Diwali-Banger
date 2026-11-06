@@ -6,7 +6,8 @@ Live at https://diwali-banger.runs-at.dev/
 ## Page flow (follows the night)
 
 1. Hero: the official banner, animated (sparkler sparks, embers, slow push-in, light sweep). Buy tickets + Explore the night
-2. The details: when, where, host, 21+, directions
+2. The details: intro, when, where, host, dress code, 18+ entry, directions
+2b. What your ticket includes (highlights) and More to explore (paid extras)
 3. The night, hour by hour: jump links with times and Free tags
 4. Diya Painting (from 5 PM, free)
 5. The Mirror Corner (all night, free): live convex camera mirror + shareable mirror selfie
