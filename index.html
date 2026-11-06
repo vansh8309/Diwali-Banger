@@ -18,13 +18,14 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Barlow+Condensed:wght@500;700&family=Noto+Sans+Telugu:wght@800&family=Noto+Sans+Devanagari:wght@800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/banner.css">
-<link rel="stylesheet" href="css/diya.css">
-<link rel="stylesheet" href="css/glam.css">
+<link rel="stylesheet" href="css/styles.css?v=6">
+<link rel="stylesheet" href="css/banner.css?v=6">
+<link rel="stylesheet" href="css/diya.css?v=6">
+<link rel="stylesheet" href="css/glam.css?v=6">
 </head>
 <body>
 <header id="banner">
+  <h1 class="sr" style="position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap">Diwali Banger, the Diwali scene you need. By Communitie with Padel.HY. Saturday 7th Nov, 5pm to 12am. Padel.hy Social Club rooftop, DSL Virtue Mall, Hyderabad.</h1>
   <div class="bn-view">
     <div class="bn-art" aria-hidden="true">
       <div class="bn-kb">
@@ -45,7 +46,7 @@
     <div><span class="k">When</span><b>Saturday, 7th Nov</b><span>5pm to 12am</span></div>
     <div><span class="k">Where</span><b>Padel.hy Social Club, rooftop</b><span>DSL Virtue Mall, Hyderabad</span></div>
     <div><span class="k">Hosted by</span><b>Communitie</b><span>with Padel.HY</span></div>
-    <div><span class="k">Entry</span><b>18+</b><span>Limited tickets</span></div>
+    <div><span class="k">Entry</span><b>21+</b><span>Limited tickets</span></div>
   </div>
   <div class="row" style="margin-top:26px"><a class="btn g" href="https://www.google.com/maps/search/?api=1&amp;query=Padel.hy+Social+Club+DSL+Virtue+Mall+Hyderabad" target="_blank" rel="noopener">Get directions</a></div>
 </section>
@@ -105,13 +106,24 @@
   <div id="mirrorwrap">
     <div class="mtxt">
       <h2>The Mirror Corner</h2>
-      <p class="lede">Round red parking mirrors that bend the room and everyone in it: the selfie corner of the night. Try the online one. Allow your camera and see yourself in our convex corner mirror. Nothing is recorded or sent anywhere. It all stays on your device.</p>
+      <p class="lede">Round red parking mirrors that bend the room and everyone in it: the selfie corner of the night. Try the online one. Allow your camera and see yourself in our convex corner mirror. Nothing is recorded or uploaded, and your photo is only shared if you choose to share it.</p>
       <button class="btn" id="camBtn">Turn on the mirror</button>
+      <div class="gm-name mr-shot">
+        <label for="mrName">Your name (goes on the image)</label>
+        <input id="mrName" type="text" maxlength="20" autocomplete="given-name" placeholder="e.g. Ananya">
+        <p id="mrMsg" role="status"></p>
+        <button class="btn" id="mrShotB" disabled>Take mirror selfie</button>
+      </div>
     </div>
     <div class="post"><div class="rim"><div class="glass">
       <canvas id="mc" width="256" height="256" aria-label="Live camera view inside a round mirror"></canvas>
       <div id="mmsg">Your reflection appears here.</div>
     </div></div></div>
+  </div>
+  <div class="gm-out" id="mrOut" hidden>
+    <img id="mrImg" alt="Your mirror selfie with the Diwali Banger event details">
+    <div class="row"><button class="btn" id="mrShare">Share with friends</button><a class="btn g" id="mrDl" href="#" download="my-diwali-banger-mirror.png">Download image</a><button class="btn g" id="mrCopy">Copy invite text</button></div>
+    <p id="mrNote" role="status"></p>
   </div>
 </section>
 
@@ -266,22 +278,23 @@
   <h2>With thanks to our partners</h2>
   <p class="lede">Diwali Banger comes together because of the people who back it. Thank you.</p>
   <ul class="partners">
-    <li class="pt"><img src="assets/logo-padelhy.png" alt="Padel.HY logo" width="297" height="297" loading="lazy"><div><b>Padel.HY</b><span>Our Host Venue and Event Partners.</span></div></li>
+    <li class="pt"><img src="assets/logo-padelhy.png" alt="Padel.HY logo" width="297" height="297" loading="lazy"><div><b>Padel.HY</b><span>Our host venue. The rooftop, the sound, the bar and the fireworks.</span></div></li>
     <!-- To add a partner: copy the <li> above, drop the logo into assets/, then change the logo path, name and one-line role. -->
   </ul>
 </section>
 <footer>7th Nov, Saturday, 5pm to 12am. Padel.hy Social Club rooftop, DSL Virtue Mall, Hyderabad.</footer>
 <div class="chk"></div>
 <button class="totop" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 19V6M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="square"/></svg></button>
-<script src="js/main.js" defer></script>
-<script src="js/banner.js" defer></script>
-<script src="js/diya.js" defer></script>
-<script src="js/glam.js" defer></script>
-<script src="js/dj.js" defer></script>
-<script src="js/mirror.js" defer></script>
-<script src="js/balloons.js" defer></script>
-<script src="js/snakes-ladders.js" defer></script>
-<script src="js/ludo.js" defer></script>
-<script src="js/lanterns.js" defer></script>
+<script src="js/main.js?v=6" defer></script>
+<script src="js/share.js?v=6" defer></script>
+<script src="js/banner.js?v=6" defer></script>
+<script src="js/diya.js?v=6" defer></script>
+<script src="js/glam.js?v=6" defer></script>
+<script src="js/dj.js?v=6" defer></script>
+<script src="js/mirror.js?v=6" defer></script>
+<script src="js/balloons.js?v=6" defer></script>
+<script src="js/snakes-ladders.js?v=6" defer></script>
+<script src="js/ludo.js?v=6" defer></script>
+<script src="js/lanterns.js?v=6" defer></script>
 </body>
 </html>

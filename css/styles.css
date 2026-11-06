@@ -135,3 +135,7 @@ section.x{border-top:3px dashed #ecd3a455}
 #gmNameMsg{margin:6px 0 0;min-height:1.3em;color:var(--yellow);font-size:18px}
 @media(prefers-reduced-motion:reduce){.totop{transition:none}#disco.flash .dsc{animation:none}}
 .pt img{border-radius:50%}
+.mr-shot{margin-top:22px}
+#mrMsg{margin:6px 0 10px;min-height:1.3em;color:var(--yellow);font-size:18px}
+#mrNote{margin:12px 0 0;color:var(--mute)}
+#mmsg.count{font:400 clamp(90px,28vw,150px)/1 'Bowlby One',Impact,sans-serif;color:#fff;text-shadow:0 6px 0 var(--red);padding:0}

@@ -9,7 +9,7 @@ Live at https://diwali-banger.runs-at.dev/
 2. The details: when, where, host, 21+, directions
 3. The night, hour by hour: jump links with times and Free tags
 4. Diya Painting (from 5 PM, free)
-5. The Mirror Corner (all night, free)
+5. The Mirror Corner (all night, free): live convex camera mirror + shareable mirror selfie
 6. Glam & Glitter Bar (all night, free): makeup game, Glam score, name + QR share image
 7. Disco Floor (sundowner from 5 PM, dance floor from 9 PM, free): includes the Pocket DJ beat maker
 8. Life-size Snakes & Ludo + Snakes & Ladders (from 6 PM, free)
@@ -26,6 +26,7 @@ index.html            markup + meta tags
 css/                  styles.css (base), banner.css, diya.css, glam.css
 js/main.js            shared helpers, tabs, back-to-top
 js/banner.js          hero animation (canvas sparks over the banner image)
+js/share.js           shared poster builder, QR codes, share/copy/download panel (Glam + Mirror)
 js/diya.js  js/glam.js  js/dj.js  js/mirror.js  js/balloons.js  js/snakes-ladders.js  js/ludo.js  js/lanterns.js
 assets/banner.webp    the official banner (1600x900)
 assets/og-image.jpg   link-preview image (cropped from the banner)
@@ -39,12 +40,13 @@ CNAME                 custom domain
 - **Ticket link:** search the repo for `communitie.in/events/diwali-banger` (index.html twice, js/glam.js once).
 - **New banner:** replace `assets/banner.webp` (keep 16:9, 1600x900). The spark positions in `js/banner.js` (`EM` and `STARS`) are in banner pixels, so move them if the sparklers move.
 - **Add a partner:** in index.html, copy the `<li class="pt">` inside `#partners`, add the logo to `assets/`, change the logo path, name and role line. The grid fills in automatically.
-- **Glam QR code:** `js/glam.js` holds the QR for `https://diwali-banger.runs-at.dev/#glam` (the `QR` array). If that URL changes, regenerate the matrix.
+- **QR codes:** `js/share.js` holds two QR matrices, for `https://diwali-banger.runs-at.dev/#glam` and `#mirror` (the `QR` object). If the domain changes, regenerate both.
+- **Cache busting:** the `?v=N` on the css/js links in index.html. Bump N when you deploy changes so visitors do not get stale files.
 - **Times:** slot labels in index.html and the "hour by hour" list.
 
 ## Notes
 
-- Mirror Corner needs HTTPS or localhost for the camera. Nothing is recorded or uploaded.
-- Glam sharing: one click copies the invite text (with the ticket link) and opens the phone share sheet with the image. Whether the app also attaches the text as a caption depends on the app; the clipboard copy is the safety net. Desktop browsers fall back to Download + Copy invite text.
+- Mirror Corner needs HTTPS or localhost for the camera. Nothing is recorded or uploaded; the selfie image is built on the visitor's device and only leaves it if they tap Share.
+- Glam and Mirror sharing: one click copies the invite text (with the ticket link) and opens the phone share sheet with the image. Whether the app also attaches the text as a caption depends on the app; the clipboard copy is the safety net. Desktop browsers fall back to Download + Copy invite text.
 - Pocket DJ sounds are synthesised in the browser (Web Audio). No audio files. iPhones play nothing in silent mode.
 - Run locally: `python3 -m http.server 8000`
